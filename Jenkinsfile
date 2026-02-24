@@ -21,7 +21,7 @@ pipeline {
 
         stage('Build & Test with JaCoCo') {
             steps {
-                sh 'mvn clean verify'
+                bat 'mvn clean verify'
                 // 'verify' runs tests AND the jacoco:report goal bound to the verify phase
             }
         }
